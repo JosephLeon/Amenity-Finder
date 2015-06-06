@@ -54,6 +54,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="findItButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g3A-lR-41v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -61,6 +64,12 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="categoryPicker" destination="HA4-vR-TN2" id="qUT-2z-rwo"/>
+                        <outlet property="categoryPickerView" destination="HA4-vR-TN2" id="34a-kS-lDn"/>
+                        <outlet property="distanceTextField" destination="qHR-c6-tea" id="vhj-zK-jjc"/>
+                        <outlet property="zipTextField" destination="qHR-c6-tea" id="81z-be-BJX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

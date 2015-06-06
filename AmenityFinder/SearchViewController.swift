@@ -10,6 +10,9 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var zipTextField: UITextField!
+    @IBOutlet weak var distanceTextField: UITextField!
+    @IBOutlet weak var categoryPickerView: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,8 @@ class SearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func findItButton(sender: AnyObject) {
+    }
 
     /*
     // MARK: - Navigation
