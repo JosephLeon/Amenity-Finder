@@ -8,15 +8,18 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
 
     @IBOutlet weak var zipTextField: UITextField!
     @IBOutlet weak var distanceTextField: UITextField!
     @IBOutlet weak var categoryPickerView: UIPickerView!
+    let categories = ["Bars", "Restaraunts", "Parks", "Movies", "Clothes"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        categoryPickerView.delegate = self
+        categoryPickerView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +35,23 @@ class SearchViewController: UIViewController {
         
         
     }
+    
+    //MARK: - Delegates and data sources
+    //MARK: Data Sources
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return categories.count
+    }
+    //MARK: Delegates
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return categories[row]
+    }
+    
+//    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        myLabel.text = pickerData[row]
+//    }
 
     /*
     // MARK: - Navigation
