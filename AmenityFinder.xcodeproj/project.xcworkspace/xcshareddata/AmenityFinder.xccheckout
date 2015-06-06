@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>79E81016-0547-4F7F-AB36-B25DF9B63E6E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AmenityFinder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9630CEA6E341157CA2362D7579673A7F41A50FC2</key>
+		<string>github.com:JosephLeon/Amenity-Finder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AmenityFinder.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9630CEA6E341157CA2362D7579673A7F41A50FC2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:JosephLeon/Amenity-Finder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9630CEA6E341157CA2362D7579673A7F41A50FC2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9630CEA6E341157CA2362D7579673A7F41A50FC2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AmenityFinder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

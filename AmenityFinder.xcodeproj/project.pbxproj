@@ -13,6 +13,7 @@
 		3188F1B61B2131DD008AA4FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3188F1B51B2131DD008AA4FE /* Images.xcassets */; };
 		3188F1B91B2131DD008AA4FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3188F1B71B2131DD008AA4FE /* LaunchScreen.xib */; };
 		3188F1C51B2131DE008AA4FE /* AmenityFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188F1C41B2131DE008AA4FE /* AmenityFinderTests.swift */; };
+		3188F1CF1B23A07F008AA4FE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188F1CE1B23A07F008AA4FE /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3188F1BE1B2131DE008AA4FE /* AmenityFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmenityFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3188F1C31B2131DE008AA4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3188F1C41B2131DE008AA4FE /* AmenityFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityFinderTests.swift; sourceTree = "<group>"; };
+		3188F1CE1B23A07F008AA4FE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				3188F1B51B2131DD008AA4FE /* Images.xcassets */,
 				3188F1B71B2131DD008AA4FE /* LaunchScreen.xib */,
 				3188F1AC1B2131DD008AA4FE /* Supporting Files */,
+				3188F1CE1B23A07F008AA4FE /* SearchViewController.swift */,
 			);
 			path = AmenityFinder;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3188F1CF1B23A07F008AA4FE /* SearchViewController.swift in Sources */,
 				3188F1B11B2131DD008AA4FE /* ViewController.swift in Sources */,
 				3188F1AF1B2131DD008AA4FE /* AppDelegate.swift in Sources */,
 			);
