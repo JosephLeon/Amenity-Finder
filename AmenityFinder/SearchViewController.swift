@@ -25,6 +25,12 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func findItButton(sender: AnyObject) {
+        
+        let zip = zipTextField.text
+        let distance = distanceTextField.text
+        let category = categoryPickerView.delegate
+        
+        
     }
 
     /*
