@@ -14,6 +14,7 @@
 		3188F1B91B2131DD008AA4FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3188F1B71B2131DD008AA4FE /* LaunchScreen.xib */; };
 		3188F1C51B2131DE008AA4FE /* AmenityFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188F1C41B2131DE008AA4FE /* AmenityFinderTests.swift */; };
 		3188F1CF1B23A07F008AA4FE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188F1CE1B23A07F008AA4FE /* SearchViewController.swift */; };
+		3188F1D11B247EEA008AA4FE /* MapResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188F1D01B247EEA008AA4FE /* MapResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3188F1C31B2131DE008AA4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3188F1C41B2131DE008AA4FE /* AmenityFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityFinderTests.swift; sourceTree = "<group>"; };
 		3188F1CE1B23A07F008AA4FE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3188F1D01B247EEA008AA4FE /* MapResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				3188F1B71B2131DD008AA4FE /* LaunchScreen.xib */,
 				3188F1AC1B2131DD008AA4FE /* Supporting Files */,
 				3188F1CE1B23A07F008AA4FE /* SearchViewController.swift */,
+				3188F1D01B247EEA008AA4FE /* MapResultsViewController.swift */,
 			);
 			path = AmenityFinder;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3188F1D11B247EEA008AA4FE /* MapResultsViewController.swift in Sources */,
 				3188F1CF1B23A07F008AA4FE /* SearchViewController.swift in Sources */,
 				3188F1B11B2131DD008AA4FE /* ViewController.swift in Sources */,
 				3188F1AF1B2131DD008AA4FE /* AppDelegate.swift in Sources */,

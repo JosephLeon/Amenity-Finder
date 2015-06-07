@@ -49,10 +49,6 @@ class SearchViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         return categories[row]
     }
     
-//    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        myLabel.text = pickerData[row]
-//    }
-
     /*
     // MARK: - Navigation
 
