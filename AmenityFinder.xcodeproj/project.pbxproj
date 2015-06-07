@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3155056C1B248DA100384ACB /* googleMapsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3155056B1B248DA100384ACB /* googleMapsBridge.m */; };
 		3188F1AF1B2131DD008AA4FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188F1AE1B2131DD008AA4FE /* AppDelegate.swift */; };
 		3188F1B11B2131DD008AA4FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188F1B01B2131DD008AA4FE /* ViewController.swift */; };
 		3188F1B41B2131DD008AA4FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3188F1B21B2131DD008AA4FE /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		054951190A07E1F3A0A34B1B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		147A50921B959CDCCC97921A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3155056A1B248DA000384ACB /* AmenityFinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmenityFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		3155056B1B248DA100384ACB /* googleMapsBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = googleMapsBridge.m; sourceTree = "<group>"; };
 		3188F1A91B2131DD008AA4FE /* AmenityFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmenityFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3188F1AD1B2131DD008AA4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3188F1AE1B2131DD008AA4FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 				3188F1AC1B2131DD008AA4FE /* Supporting Files */,
 				3188F1CE1B23A07F008AA4FE /* SearchViewController.swift */,
 				3188F1D01B247EEA008AA4FE /* MapResultsViewController.swift */,
+				3155056B1B248DA100384ACB /* googleMapsBridge.m */,
+				3155056A1B248DA000384ACB /* AmenityFinder-Bridging-Header.h */,
 			);
 			path = AmenityFinder;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 			files = (
 				3188F1D11B247EEA008AA4FE /* MapResultsViewController.swift in Sources */,
 				3188F1CF1B23A07F008AA4FE /* SearchViewController.swift in Sources */,
+				3155056C1B248DA100384ACB /* googleMapsBridge.m in Sources */,
 				3188F1B11B2131DD008AA4FE /* ViewController.swift in Sources */,
 				3188F1AF1B2131DD008AA4FE /* AppDelegate.swift in Sources */,
 			);
@@ -404,9 +410,12 @@
 			baseConfigurationReference = F9F9EA6600DE74BC65672831 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AmenityFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmenityFinder/AmenityFinder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -415,9 +424,11 @@
 			baseConfigurationReference = 147A50921B959CDCCC97921A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = AmenityFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmenityFinder/AmenityFinder-Bridging-Header.h";
 			};
 			name = Release;
 		};
