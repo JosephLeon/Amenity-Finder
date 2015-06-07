@@ -20,6 +20,7 @@ class SearchViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
 
         categoryPickerView.delegate = self
         categoryPickerView.dataSource = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,6 @@ class SearchViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         let zip = zipTextField.text
         let distance = distanceTextField.text
         let category = categoryPickerView.delegate
-        
         
     }
     

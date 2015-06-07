@@ -71,7 +71,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="categoryPicker" destination="HA4-vR-TN2" id="qUT-2z-rwo"/>
                         <outlet property="categoryPickerView" destination="HA4-vR-TN2" id="34a-kS-lDn"/>
                         <outlet property="distanceTextField" destination="qHR-c6-tea" id="vhj-zK-jjc"/>
                         <outlet property="zipTextField" destination="qHR-c6-tea" id="81z-be-BJX"/>
