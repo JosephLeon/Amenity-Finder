@@ -110,6 +110,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="57G-kQ-qhA" id="0Oa-DY-GeQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPC-lG-auC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
