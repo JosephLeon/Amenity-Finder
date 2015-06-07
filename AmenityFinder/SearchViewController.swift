@@ -34,6 +34,8 @@ class SearchViewController: UIViewController, UIPickerViewDataSource,UIPickerVie
         let distance = distanceTextField.text
         let category = categoryPickerView.delegate
         
+        self.performSegueWithIdentifier("findAmenities", sender: self)
+        
     }
     
     //MARK: - Delegates and data sources

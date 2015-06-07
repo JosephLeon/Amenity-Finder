@@ -74,7 +74,7 @@
                         <outlet property="categoryPickerView" destination="HA4-vR-TN2" id="34a-kS-lDn"/>
                         <outlet property="distanceTextField" destination="qHR-c6-tea" id="vhj-zK-jjc"/>
                         <outlet property="zipTextField" destination="qHR-c6-tea" id="81z-be-BJX"/>
-                        <segue destination="DLE-Zu-1Ia" kind="presentation" id="fJs-d4-p9k"/>
+                        <segue destination="DLE-Zu-1Ia" kind="presentation" identifier="findAmenities" id="fJs-d4-p9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
