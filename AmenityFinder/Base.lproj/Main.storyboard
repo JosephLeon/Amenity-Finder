@@ -107,7 +107,7 @@
                                 <items>
                                     <navigationItem id="NNF-oJ-Gyd">
                                         <nil key="title"/>
-                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="V2g-Ra-zLB">
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" id="V2g-Ra-zLB">
                                             <rect key="frame" x="111.5" y="7" width="191" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
