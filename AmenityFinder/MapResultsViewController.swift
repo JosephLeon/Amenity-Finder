@@ -12,6 +12,22 @@ import GoogleMaps
 class MapResultsViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
+
+    @IBAction func mapTypeSegmentPressed(sender: AnyObject) {
+        let segmentedControl = sender as UISegmentedControl
+        // The code below utilizes as! which is for xcode 6.3+
+        // let segmentedControl = sender as! UISegmentedControl
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            mapView.mapType = kGMSTypeNormal
+        case 1:
+            mapView.mapType = kGMSTypeSatellite
+        case 2:
+            mapView.mapType = kGMSTypeHybrid
+        default:
+            mapView.mapType = mapView.mapType
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

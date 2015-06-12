@@ -115,6 +115,9 @@
                                                 <segment title="Satellite"/>
                                                 <segment title="Hybrid"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="mapTypeSegmentPressed:" destination="DLE-Zu-1Ia" eventType="valueChanged" id="PoD-9K-cBh"/>
+                                            </connections>
                                         </segmentedControl>
                                     </navigationItem>
                                 </items>
