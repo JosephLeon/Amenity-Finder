@@ -9,12 +9,12 @@
 import UIKit
 import GoogleMaps
 
-class MapResultsViewController: UIViewController {
+class MapResultsViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: GMSMapView!
 
     @IBAction func mapTypeSegmentPressed(sender: AnyObject) {
-        let segmentedControl = sender as UISegmentedControl
+        let segmentedControl = sender as! UISegmentedControl
         // The code below utilizes as! which is for xcode 6.3+
         // let segmentedControl = sender as! UISegmentedControl
         switch segmentedControl.selectedSegmentIndex {
@@ -29,20 +29,13 @@ class MapResultsViewController: UIViewController {
         }
     }
     
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        var camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-//            longitude: 151.20, zoom: 6)
-//        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-//        mapView.myLocationEnabled = true
-//        self.view = mapView
-//        
-//        var marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
     }
 
     override func didReceiveMemoryWarning() {
