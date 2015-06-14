@@ -35,22 +35,20 @@ class MapResultsViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-    
         if status == .AuthorizedWhenInUse {
+            
             locationManager.startUpdatingLocation()
             
             mapView.myLocationEnabled = true
             mapView.settings.myLocationButton = true
         }
-        
     }
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        
         if let location = locations.first as? CLLocation {
             
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-            locationManager.startUpdatingLocation()
             
+            locationManager.stopUpdatingLocation()
         }
     }
     
@@ -59,6 +57,9 @@ class MapResultsViewController: UIViewController, CLLocationManagerDelegate {
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+        locationManager.distanceFilter = 500; // meters
+
     }
 
     override func didReceiveMemoryWarning() {
