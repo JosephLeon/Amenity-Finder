@@ -107,22 +107,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57G-kQ-qhA" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha4-2i-Wx1">
                                 <rect key="frame" x="16" y="20" width="382" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oz8-06-JaY">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oz8-06-JaY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="NNF-oJ-Gyd">
                                         <nil key="title"/>
-                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" id="V2g-Ra-zLB">
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" id="V2g-Ra-zLB">
                                             <rect key="frame" x="111.5" y="7" width="191" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
@@ -137,11 +133,19 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57G-kQ-qhA" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="57G-kQ-qhA" secondAttribute="trailing" id="3iD-nK-kER"/>
-                            <constraint firstItem="57G-kQ-qhA" firstAttribute="leading" secondItem="2Qh-f7-iiN" secondAttribute="leading" id="roz-dv-LQn"/>
+                            <constraint firstItem="57G-kQ-qhA" firstAttribute="leading" secondItem="2Qh-f7-iiN" secondAttribute="leadingMargin" constant="-16" id="1XE-e3-Wy0"/>
+                            <constraint firstItem="57G-kQ-qhA" firstAttribute="top" secondItem="oz8-06-JaY" secondAttribute="bottom" id="3cA-KM-Q7j"/>
+                            <constraint firstItem="oz8-06-JaY" firstAttribute="leading" secondItem="2Qh-f7-iiN" secondAttribute="leadingMargin" constant="-16" id="GyX-W6-Gfc"/>
+                            <constraint firstItem="DFM-Ez-72w" firstAttribute="top" secondItem="57G-kQ-qhA" secondAttribute="bottom" id="V3T-AC-ndr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oz8-06-JaY" secondAttribute="trailing" constant="-16" id="euS-R7-b95"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="57G-kQ-qhA" secondAttribute="trailing" constant="-16" id="rtq-sJ-Pjq"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
